@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+    background-image: url("tree.jpg");
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    form {
+    background-image: url('clouds.jpg');
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    border: 3px solid orange;
+    }
+    
+    
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 3px solid orange;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: orange;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+  <img src="1703482090271.jpg" alt="Login Image" style="width: 100%; max-width: 200px; border-radius: 50%; margin-bottom: 20px;">
+  
+    <label for="username">Email or phone:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+  </form>
+
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Dummy check (Replace this with server-side authentication)
+      if (username === "romilie" && password === "12345") {
+        alert("Login successful!");
+        window.location.href ="website (1).html";
+      } else {
+        alert("Invalid username or password. Try again.");
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: White;
+      text-align: none;
+    }
+
+    header {
+      background-color: none
+      color: black;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+     
+    }
+
+    nav {
+      background-color: white;
+      overflow: hidden;
+      text-align: center;
+      font-family: comic sans MS,cursive;
+      font-size: 20px;
+      border: 2px solid pink;
+      border-radius: 5px;
+      
+   }
+   nav :hover{
+   color: pink; 
+    }
+
+    nav a {
+     float: left;
+      display: inline-block;
+      color: green;
+      text-align: center;
+      padding: 20px  20px;
+      text-decoration: none;
+      border-radius: 10px;
+      border: 2px Solid pink ;
+      background: none:
+      font-size: 20px;
+      transition: background-color 0.3s, opacity 0.5s;
+      margin: 0 10px;
+      opacity: 0;
+      }
+      
+    }
+    nav a:hover{
+    background-color: pink;
+    }
+    nav a:hover, nav a:focus {
+    opacity: 1;
+    }
+    
+    @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
+    
+nav a:nth-child(1) {
+      animation: fadeIn 0.5s ease-in-out 0.5s forwards; 
+    }
+
+    nav a:nth-child(2) {
+      animation: fadeIn 0.5s ease-in-out 1s forwards; 
+    }
+
+    nav a:nth-child(3) {
+      animation: fadeIn 0.5s ease-in-out 1.5s forwards; 
+    }
+nav a:nth-child(4) {
+     animation: fadeIn 0.5s ease-in-out 1.5s forward
+     }
+    section {
+      padding: 20px;
+      font-family: times new roman;
+    }
+
+    #home, #about, #gallery, #logout {
+      display: none;
+    }
+
+    #home {
+      display: block;
+    }
+   img {
+   max-width: 90%; 
+   height: auto; 
+   text-align: center;
+   border: 3px inset pink;
+   border-radius: 5px;
+    }
+    p{
+    font-size: 20px;
+    }
+    video{
+    width: 100%;
+    height: auto;
+    }
+    h1{
+    font-size: 30px;
+    color: 
+    }
+    #about {
+    background-image: url('1703482090271~2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    } 
+    #about h1{
+    background-image: url('1703482090271.jpg');
+    color: black;
+    text-shadow: 2px 2px green;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    }
+    #home{
+    background-image: url('pink.jpg');
+    }
+    #gallery{
+    background-image: url('mundi.jpg');
+    color: white;
+    text-align: center;
+    }
+    #gallery h1{
+    font-size: 50px;
+    color: green;
+    text-shadow: 2px 2px white;
+    font-family: monospace;
+    }
+    #gallery h2{
+    font-family: cursive;
+    color: green;
+    font-size: 40px;
+    background-color: white;
+    width:80px;
+    text-align: center;
+    border: 2px groove;
+    text-shadow: 2px 1px Black;
+    } 
+    #home h1{
+    font-family: monospace;
+    }
+    #home h2{
+    font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('about')">About</a>
+    <a href="#" onclick="showPage('gallery')">Gallery</a>
+    <a href="index.html">Logout</a>
+  </nav>
+
+  <section id="home">
+  
+    <p>Hello there! I'm Romilie Lumayag, a curious soul navigating through the intricacies of life. Passionate about the ever-evolving world of technology and computers, I find joy in exploring the uncharted territories of knowledge. Let's embark on a conversation and discover the richness of our shared experiences.</p>
+  <br>  
+    <h2>My Hobbies</h2>
+    <p>I enjoy:</p>
+    <ul>
+    <li>Dancing</li>
+    <li>Watching Movies</li>
+    <li>Sleeping
+    <li> singing
+    <li> traveling
+    </ul>
+  <br>
+    <h2>My Goals</h2>
+    <p>My life goals include:</p>
+    <ol>
+    <li>To finish my study</li>
+    <li>Have a Stable Job</li>
+    <li>Make my family proud </li>  
+    <li> Having A happy life
+    <li> to travel every country
+    </ol>
+<br>
+    <h2> My Motto in life </h2>
+    <p> "Trust the timing of your life."</p>
+  <br>  
+    <h2>My Photos</h2>
+    <img src="Myface.jpg" alt="Description of Image 1"; width="50";heigth="60">
+    <img src="blue.jpeg" alt="Description of Image 2"; width="50";heigth="60">
+    <img src="picture.jpg" alt="Description of Image 1"; width="50";heigth="60">
+
+  </section>
+  
+  <section id="about">
+    <header>
+    <h1>Unveiling Lux Mundis Cup 2023</h1>
+    </header>
+    <p>Igniting the World with Excellence: Lux Mundis Cup 2023, where every moment on the field becomes a masterpiece of skill, sportsmanship, and global unity. 🏆✨ #LuxMundisExcellence"</p>
+    <h2>What is Lux Mundis Cup 2023 is all about?</h2>
+    <p> "Illuminating Excellence: Lux Mundis Cup 2023, where sportsmanship meets innovation, and the pursuit of greatness becomes a global symphony of skill and passion. 🌟🏆 #LuxMundisJourney"</p>    
+    <h2> Our Mission </h2>
+    <p>"Fostering a global community united by the pursuit of excellence, sportsmanship, and innovation—our mission at Lux Mundis Cup 2023 is to illuminate the world with the extraordinary spirit of competition. 🌐✨ #LuxMundisMission"</p> 
+    <p>Welcome to a realm where <span class="highlight">Lux Mundis Cup 2023</span> transcends the ordinary and
+    becomes a symphony of excellence.</p>
+    <p>Embark on a journey where sportsmanship meets innovation, and the pursuit of greatness is a shared
+    passion.</p>
+    <p>Join us in <span class="highlight">unveiling</span> the spirit of competition that ignites the fields
+    with unmatched energy and inspiration.</p>
+    <br>
+    <img  src="lux.jpg" alt="Lux Mundis Cup 2023 Image";width="60";heigth="60">
+    <br>
+    <img  src="1703570072094.jpg";width="60";height="60">
+    <img src="1703570074147.jpg";width="20";heigth="20">
+    <img src="1703570076886.jpg">
+    <img src="1703570078989.jpg">
+    <img src="1703570081516.jpg">
+    <img src="1703570083632.jpg">
+  </section>
+
+  <section id="gallery">
+    
+    <h1>Gallery</h1>
+    
+    <div class="day">
+    <h2>Day 1</h2>
+    <div class="picture">
+    <img src="IMG_20231218_211901_5.jpg" alt="Day 1 - Picture 1";width="20px";height="20px">
+    <p class="caption">ICS- Pagarbuhay</p>
+    </div>
+    <div class="picture">
+    <img src="luxmundi.jpg" alt="Day 1 - Picture 2">
+    <p class="caption">Opening Salvo.</p>
+    </div>
+    <div class="picture">
+    <img src="opening.jpg" alt="Day 1 - Picture 3">
+    <p class="caption">Opening for Lux Mundis Cup 2023.</p>
+    </div>
+    <div class="day">
+    <h2>Day 2</h2>
+    <div class="picture">
+    <img src="cheerdance.jpg" alt="Day 1 - Picture 1">
+    <p class="caption">Cheerdance- ICS</p>
+    </div>
+    <div class="picture">
+    <img src="showdown.jpg" alt="Day 1 - Picture 2">
+    <p class="caption">Showdown of all Cheerdancers.</p>
+    </div>
+    <div class="picture">
+    <img src="dancesport.jpg" alt="Day 1 - Picture 3">
+    <p class="caption">Dancesport showdown Competition.</p>
+    </div>
+    <div class="day">
+    <h2>Day 3</h2>
+    <div class="picture">
+    <img src="sepak.jpg" alt="Day 1 - Picture 1">
+    <p class="caption">Sepak Takraw <br> Ics vs. Ias</p>
+    </div>
+    <div class="picture">
+    <img src="takraw.jpg" alt="Day 1 - Picture 2">
+    <p class="caption">Sepak Takraw.</p>
+    </div>
+    <div class="picture">
+    <img src="miss.jpg" alt="Day 1 - Picture 3">
+    <p class="caption">Search For Mr and Ms. Lux Mundis Cup 2023.</p>
+    </div>
+    </div>
+    </div>
+    <div class="day">
+    <h2>Day 4</h2>
+    <div class="picture">
+    <img src="volleyball.jpg" alt="Day 1 - Picture 1">
+    <p class="caption">Volleybal for girls Ics.</p>
+    </div>
+    <div class="picture">
+    <img src="basketball.jpg" alt="Day 1 - Picture 2">
+    <p class="caption">Basketball boys.</p>
+    </div>
+    <div class="picture">
+    <img src="table.jpg" alt="Day 1 - Picture 3">
+    <p class="caption">Table tennis.</p>
+    </div>
+    <div class="day">
+    <h2>Day 5</h2>
+    <div class="picture">
+    <img src="gawad.jpg" alt="Day 1 - Picture 1">
+    <p class="caption">Gawad Pelikula</p>
+    </div>
+    <div class="picture">
+    <img src="awarding.jpg" alt="Day 1 - Picture 2">
+    <p class="caption">Awarding of the Best Actress and Actor pf Gawad pelikula.</p>
+    </div>
+    <div class="picture">
+    <img src="swift.jpg" alt="Day 1 - Picture 3">
+    <p class="caption">Swifties Night.</p>
+    </div>
+    <h2> Video </h2>
+    <div class="video">
+    <video controls>
+    <source src="video.mp4" type="video/mp4">   
+    Your browser does not support the video tag.
+    </div>
+    </video>
+    </div>
+    </div>
+  </section>
+
+  <section id="logout">
+    <h2>Logout</h2>
+    <p>This is the logout section.</p>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(pageId).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
